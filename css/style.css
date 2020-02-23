@@ -1,0 +1,77 @@
+
+@import url('https://rsms.me/inter/inter.css');
+
+.ramka{
+    border: 2px solid blue;
+}
+
+html{
+    font-family: 'Inter', sans-serif; 
+}
+
+
+
+
+/*top bar*/
+
+/*navbar*/
+
+.nav-item{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e3a53 !important;
+    padding: 8px 25px !important;
+    border-radius: 22.0416px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #fff !important;
+    background-color: #F25E2A !important;
+    
+}
+
+#brief{
+    margin: 0 30px;
+    padding: 8px 35px !important ; 
+    background-color: #F9AB1C;
+    text-transform: uppercase;
+    color: #f2f2f2 !important;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+#brief:hover{
+    transform: scale(0.9);
+}
+
+/*Logo emedia*/
+.logo img{
+    width: 250px;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .logo img{
+        width: 130px;
+    }
+    .logo{
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    .nav-item{
+        padding: 8px 20px;
+    }
+    #brief{
+        font-size: 12px;
+        line-height: 15px;
+        padding: 8px 25px;
+    }
+  }
