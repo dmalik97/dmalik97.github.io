@@ -1,5 +1,6 @@
 
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 .ramka{
     border: 2px solid blue;
@@ -13,6 +14,26 @@ html{
 
 
 /*top bar*/
+.quick-contact{
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px;
+    color: #2e3a53 !important;
+    height: 5px;
+    margin-right: 30px;
+}
+
+.quick-contact a{
+    color: #2e3a53 !important;
+}
+
+@media screen and (max-width: 769px) {
+    .quick-contact{
+        margin: 0;
+    }
+}
+
+
+
 
 /*navbar*/
 
@@ -50,7 +71,7 @@ html{
 
 /*Logo emedia*/
 .logo img{
-    width: 250px;
+    width: 235px;
     
 }
 
@@ -61,17 +82,107 @@ html{
     .logo{
         width: 50% !important;
     }
+    #brief{
+        margin: 0;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    
-
-    .nav-item{
-        padding: 8px 20px;
+@media screen and (max-width: 769px) {
+    .logo img{
+        width: 130px;
     }
+    
+    .nav-item{
+        padding: 8px 15px !important;
+        font-size: 12px;
+    }
+
     #brief{
         font-size: 12px;
         line-height: 15px;
-        padding: 8px 25px;
+        padding: 8px 20px !important;
+        white-space: nowrap;
     }
   }
+
+
+  /*Reklama w internecie to nasza specjalność*/
+  #head-section{
+    margin: 115px 0 0 35px;
+  }
+  #head-section h1, #head-section h3{
+      font-family: 'Inter', sans-serif;
+      color: #2e3a53 !important;
+  }
+
+  #head-section h1{
+    font-size: 55px;
+    font-weight: 800;
+  }
+
+  #head-section h3{
+    font-size: 45px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -2px;
+}
+
+#head-section p{
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #7f7f7f;
+    font-size: 20px;
+    width: 80%;
+}
+
+  .advertisement{
+      width: 685px;
+      height: auto;
+      object-fit: cover;
+      object-position: 30px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+
+  }
+
+  @media screen and (max-width: 769px) {
+
+  }
+
+  /*form*/
+  #offert input{
+      width: 65%;
+      text-align: center;
+      margin-left: 6%;
+      margin-right: 44%;
+      border-radius: 33.91px;
+      letter-spacing: -0.5px;
+      line-height: 28px;
+      font-size: 22px;
+  }
+
+  #offert input::placeholder{
+    font-family: 'Source Sans Pro' ;
+  }
+
+  #offert input[type=email]{
+      padding: 30px 0;
+      border: 1px solid #979797;
+      background: #fff;
+  }
+
+  #offert input[type=email]::placeholder{
+    color: #878b90;
+}
+  #offert input[type=submit]{
+    padding: 16px 0;
+    background-color: #F9AB1C;
+    border: none;
+}
+
+#offert input[type=submit]::placeholder{
+    color: #f2f2f2;
+}
+
+ 

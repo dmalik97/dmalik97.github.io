@@ -10,18 +10,28 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
   </head>
-  <body>
-    <div class="container-fluid">
+  <body class="bg-light">
+    <div class="container-fluid bg-light">
+
+        <div class="row d-none d-sm-block bg-light">
+          <div class="col-sm-12">
+            <p class="text-right quick-contact mt-4">
+              szybki kontakt:
+              <a href="tel:+48570122140">+48 570 122 140</a>,
+              <a href="mailto:kontakt@emedia.com.pl">kontakt@emedia.com.pl</a>
+            </p>
+          </div>
+        </div>
         <nav class="navbar navbar-expand-md navbar-light bg-light row">
-            <a href="#" class="navbar-brand col-sm-4 logo">
+            <a href="#" class="navbar-brand col-sm-3 logo">
                 <img src="images/logo.PNG" alt="Emedia">
             </a>
             <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <div class="collapse navbar-collapse col-sm-8" id="navbarCollapse">
-                <div class="navbar-nav ml-auto ">
+            <div class="collapse navbar-collapse col-sm-9" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
                     <a href="#" class="nav-item nav-link active">współpraca</a>
                     <a href="#" class="nav-item nav-link">strategia</a>
                     <a href="#" class="nav-item nav-link">content</a>
@@ -31,11 +41,37 @@
                 </div>
                 
                 <a id="brief" class="btn btn-primary nav-item" href="#" role="button">wypełnij brief</a>
-                
             </div>
-            
         </nav>
     </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="head-section">
+            <h1>Reklama w internecie</h1>
+            <h3>to nasza specjalność</h3>
+            <p>Reklama w internecie, pozycjonowanie stron internetowych.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            </p>
+          </div>
+
+          <form id="offert">
+            <input type="email" class="form-control" placeholder="wpisz swój e-mail">
+            <input type="submit" class="mt-4 btn btn-primary" value="Darmowa propozycja współpracy">
+          </form>
+
+        </div>
+        <div class="col-sm-6">
+          <img src="images/Frame1.png" class="img-fluid advertisement" alt="Reklama w internecie">
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
