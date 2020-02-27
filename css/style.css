@@ -1,14 +1,22 @@
 
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .ramka{
     border: 2px solid blue;
 }
 
-html{
+html, h1, h2, h3, h4, h5, h6, p, a{
     font-family: 'Inter', sans-serif; 
 }
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #2e3a53;
+}
+
+
 
 
 
@@ -109,9 +117,10 @@ html{
   /*Reklama w internecie to nasza specjalność*/
   #head-section{
     margin: 115px 0 0 35px;
+    margin: 25% 0 25% 35px;
   }
   #head-section h1, #head-section h3{
-      font-family: 'Inter', sans-serif;
+      /*font-family: 'Inter', sans-serif;*/
       color: #2e3a53 !important;
   }
 
@@ -133,21 +142,72 @@ html{
     color: #7f7f7f;
     font-size: 20px;
     width: 80%;
+    line-height: 34px;
 }
 
   .advertisement{
-      width: 685px;
+      width: 100%;/*685px;*/
       height: auto;
       object-fit: cover;
       object-position: 30px 0;
   }
 
   @media screen and (max-width: 480px) {
+    #head-section{
+        margin: 20px 0 0 0 !important;
+    }
 
+    #head-section h1{
+        
+        font-size: 40px;
+        white-space: normal !important;
+    }
+
+    #head-section h3{
+        margin-top: -10px;
+        font-size: 30px;
+    }
+
+    #head-section p{
+        margin-top: 10px;
+        font-size: 15px;
+        width: 100%;
+        line-height: 20px;
+    }
+
+    .advertisement{
+        
+    }
   }
 
   @media screen and (max-width: 769px) {
+    #head-section{
+        margin: 75px 0 0 0;
+    }
 
+    #head-section h1{
+        font-size: 42px;
+        white-space: nowrap;
+    }
+
+    #head-section h3{
+        font-size: 35px;
+    }
+
+    #head-section p{
+        margin-top: 0px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .advertisement{
+        height: 450px;
+        object-position: 25px 50px;
+    }
+
+    #head-section, #offert{
+
+    }
   }
 
   /*form*/
@@ -179,10 +239,562 @@ html{
     padding: 16px 0;
     background-color: #F9AB1C;
     border: none;
+    transition: 0.3s;
+}
+
+#offert input[type=submit]:hover{
+    transform: scale(0.9);
 }
 
 #offert input[type=submit]::placeholder{
     color: #f2f2f2;
 }
 
+@media screen and (max-width: 480px){
+    #offert input{
+        margin: 0 10% 0 15%;
+    }
+}
+
+@media screen and (max-width: 769px){
+    #offert input{
+        font-size: 15px;
+    }
+
+    #offert input[type=email]{
+        padding: 20px 0;
+    }
+
+    #offert input[type=submit]{
+        margin-top: 5px;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
  
+
+/*Certyfikaty*/
+#certificates{
+    margin-top: 80px;
+    background: #FFFFFF !important;
+    
+}
+
+.owl-carousel{
+    display: flex;
+    align-items: center;
+    height: 180px;
+}
+.owl-carousel img{
+    max-width: 100%;
+    width: auto !important;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev, 
+.owl-carousel button.owl-dot {
+display: none;
+}
+
+/*zespół*/
+#about{
+    background-color: #fff !important;
+    
+    margin: 0 !important;
+}
+
+
+#team-vector{
+    top: 5%;
+    left: -3%;
+}
+
+#team-img{
+    z-index: 1;
+    left: -2%;
+    top: 60px;
+    border-top-right-radius: 20vw;
+    border-bottom-right-radius: 20vw;
+    
+}
+
+
+#team-description{
+ 
+}
+
+#team-description h3{
+    font-weight: bold;
+     font-size: 38px;
+     line-height: 50px;
+     align-items: center;
+     letter-spacing: -0.3px;
+     display: flex;
+     margin-top: 25%;
+
+}
+
+#team-description p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+    opacity: 0.7;
+}
+
+.more{
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: -0.3px;
+    text-align: center;
+    background-color: #F9AB1C;
+    border-radius: 33.91px;
+    padding: 10px 0;
+    border: none;
+    width: 150px;
+    margin: 0 0 0 60%;
+    transition: 0.3s;
+}
+
+.more:hover{
+    transform: scale(0.9);
+    background-color: #F9AB1C;
+}
+
+@media screen and (max-width: 769px){
+    #team-img{
+        top: 105px;
+        
+    }
+
+    #team-description{
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+
+    #team-description h3{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    #team-description p{
+        line-height: 25px;
+    }
+
+    .more{
+        margin: 0 25% 0 25%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #team-img{
+        top: 0;
+        left: 0;
+        border-radius: 20vw;
+    }
+
+    #team-description{
+        margin: 0 auto !important;
+        width: 90% !important;
+    }
+
+    #team-description h3{
+        margin-top: 10px;
+        font-size: 31px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #team-description p{
+        line-height: 25px;
+    }
+
+    .more{
+        margin: 0 25% 0 25%;
+    }
+}
+
+#people{
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+
+#menu ol{
+    list-style-type: none !important;
+    
+}
+
+#menu ol li{
+    font-family: 'Lato' !important;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    color: #909097;
+}
+
+#menu ol li:first-child{
+    color: #F25E2A;
+    border-bottom: 2px solid #F25E2A;
+}
+
+.pearson{
+    margin-top: 6%;
+}
+
+.pearson h3{
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px; 
+
+}
+
+.pearson h4{
+    margin-top: -10px;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: normal;
+}
+
+.social{
+    list-style-type: none;
+}
+
+.social li{
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #2e3a53;
+}
+
+.pearson h1{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 90px;
+    letter-spacing: -0.4px;
+}
+
+.pearson p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.pearson .more{
+    background-color: #F25E2A;
+    width: 180px;
+    margin: 0;
+}
+
+@media screen and (max-width: 769px){
+    .pearson h3{
+        margin-top: 5%;
+    }
+
+    .pearson p{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .pearson img{
+        margin: 0 28%;
+    }
+    .pearson h3, .pearson h4{
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .pearson h1{
+        font-size: 25px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
+    .pearson p{
+        margin-top: 20px;
+        text-align: justify;
+        width: 100%;
+    }
+
+}
+
+/*Metodologia pracy*/
+
+#metodology{
+    margin-top: 15%;
+}
+
+#metodology h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: -0.3px;
+}
+
+#metodology p{
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #909097;
+}
+
+#metodology h4{
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px){
+    #metodology h1{
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    #metodology p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #metodology h4{
+        font-size: 16px;
+    }
+
+}
+
+
+/*owner*/
+#owner{
+    margin-top: 18% !important;
+    margin-left: 5%;
+}
+
+#owner .more{
+    background-color: #F9AB1C;
+}
+
+/*contact*/
+#contact{
+    margin-top: 10%;
+}
+
+#contact h1 span{
+    color: #F25E2A;
+}
+
+#contact .more{
+    margin: 0;
+    background-color: #F25E2A;
+    width: 200px;
+    padding: 5%;
+}
+
+#contact h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 33px;
+    letter-spacing: 0.3px;
+}
+
+#contact p{
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 769px){
+    #contact h1{
+        font-size: 30px;
+        margin-left: 10px
+    }
+
+    #contact p{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #contact{
+        margin-top: 20%;
+    }
+    #contact .more{
+        padding: 2% 0;
+        margin-left: 15%;
+    }
+    #contact h1{
+        font-size: 30px;
+        margin-left: 10px
+    }
+
+    #contact p{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+/*zaufali nam*/
+#trusted-us{
+    margin-top: 10%;
+
+    height: 700px;
+  }
+  
+  #trusted-us h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 45px;
+    letter-spacing: -0.4px;
+  }
+  
+  #trusted-us p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    opacity: 0.7;
+  }
+
+  .media{
+      margin-top: 8%;
+  }
+
+
+  #testimonials{
+      margin-top: -15%;
+      background-color: #fff;
+  }
+
+  .opinion{
+      border: 1px solid #e8e8ea;
+      padding: 2% 4% 2% 4%;
+      background-color: #fff;
+      position: relative;
+      top: -80px;
+      
+  }
+
+  .opinion:first-child{
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-right: none;
+  }
+
+  .opinion:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+  }
+
+  .quote{
+      margin-bottom: 50px;
+  }
+
+  #testimonials p{
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: -0.1px;
+  }
+
+  #testimonials h3{
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+      margin-left: -10px !important;
+  }
+
+  #testimonials span{
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+      color: #2e3a53;
+      margin-left: -10px !important;
+      margin-top: -15px !important;
+  }
+
+
+  #instagram{
+      background-color: #fff;
+  }
+
+  .gallery{
+      margin-top: 5%;
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  #instagram h1{
+      font-size: 38px;
+      line-height: 45px;
+      letter-spacing: -0.4px;
+      font-weight: bold ;
+  }
+
+  #instagram img{
+      width: 100%;
+    
+  }
+
+  #instagram { /*Czy na pewno będzie działać?*/
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #footer{
+      margin-top: 10%;
+      background: #152649;
+  }
+
+  #footer svg{
+      position: relative;
+      top: -10px;
+      
+  }
+
+  #footer h2{
+      font-family: 'Montserrat';
+      font-size: 14.4px;
+      color: #fff;
+      line-height: 25px;
+  }
+
+  #footer p{
+      color: #fff;
+      font-size: 14.4px;
+      line-height: 25px;
+      font-family: 'Montserrat';
+  }
+
+  #footer ul li{
+      font-family: 'Montserrat';
+      font-size: 14px;
+      line-height: 27px;
+      color: #fff;
+  }
