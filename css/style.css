@@ -536,6 +536,9 @@ display: none;
 
 #metodology{
     margin-top: 15%;
+    background: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 #metodology h1{
@@ -565,6 +568,10 @@ display: none;
     line-height: 32px;
     text-transform: uppercase;
     text-align: center;
+}
+
+#metodology img{
+    width: 100%;
 }
 
 @media screen and (max-width: 480px){
@@ -597,6 +604,8 @@ display: none;
 
 /*contact*/
 #contact{
+    padding: 5% 0 5% 0;
+    background-color: #fff;
     margin-top: 10%;
 }
 
@@ -685,6 +694,25 @@ display: none;
       margin-top: 8%;
   }
 
+@media screen and (max-width: 769px){
+    #trusted-us{
+        margin-top: 100px;
+        height: 525px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #trusted-us{
+        margin-top: 100px;
+        height: 450px;
+    }
+
+    #trusted-us h3{
+        font-size: 35px;
+        line-height: 38px;
+    }
+}
+
 
   #testimonials{
       margin-top: -15%;
@@ -739,6 +767,30 @@ display: none;
       margin-top: -15px !important;
   }
 
+  @media screen and (max-width: 769px){
+    
+}
+
+    @media screen and (max-width: 480px){
+
+        .opinion{
+            margin-top: 50px;
+            border-radius: 10px;
+            padding-top: 10%;
+            padding-bottom: 5%;
+        }
+
+        .opinion:first-child{
+            
+            border-right: 1px solid #e8e8ea;
+        }
+      
+        .opinion:last-child{
+         
+          border-left: 1px solid #e8e8ea;
+        }
+    }
+
 
   #instagram{
       background-color: #fff;
@@ -762,20 +814,31 @@ display: none;
     
   }
 
+ 
+
   #instagram { /*Czy na pewno będzie działać?*/
     padding: 0 !important;
     margin: 0 !important;
   }
+
+  @media screen and (max-width: 480px){
+    #instagram h1{
+        font-size: 35px;
+        line-height: 38px;
+    }
+    .instagram-hide{
+        display: none !important;
+    }
+}
 
   #footer{
       margin-top: 10%;
       background: #152649;
   }
 
-  #footer svg{
-      position: relative;
-      top: -10px;
-      
+  #footer .logo2{
+      margin-top: 100px;
+      padding: 2% 3% 2% 4%;
   }
 
   #footer h2{
@@ -783,6 +846,7 @@ display: none;
       font-size: 14.4px;
       color: #fff;
       line-height: 25px;
+      opacity: 0.7;
   }
 
   #footer p{
@@ -798,3 +862,136 @@ display: none;
       line-height: 27px;
       color: #fff;
   }
+
+  #footer .read-more{
+      width: 100%;
+      
+  }
+
+ #footer .read-more a{
+     background: none ;
+     border: none !important;
+     font-family: 'Montserrat';
+     font-size: 14.4px;
+     line-height: 25px;
+     opacity: 0.7;
+ }
+
+ #footer hr{
+     background: #e8e8ea;
+     width: 90%;
+     opacity: 0.12;
+ }
+
+
+
+ #footer ul {
+    list-style: none;
+    
+  }
+
+  .wspolpraca, .strategia, .content, .sukces{
+     margin-top: 25px;
+  }
+  
+  #footer ul li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #footer .wspolpraca li:before{
+      color: #F25E2A;
+  }
+
+  #footer .strategia li:before{
+    color: #00a4e0;
+}
+
+#footer .content li:before{
+    color: #6db83f;
+}
+
+#footer .sukces li:before{
+    color: #b51c8d;
+}
+
+.newsletter{
+    width: 100%;
+    background: #999;
+    border-radius: 10vw;
+    padding: 2%;
+}
+
+.newsletter input[type=email]{
+    background: none;
+    border: none;
+    margin-left: 20px;
+}
+
+.newsletter input[type=email]::placeholder{
+    color: #fff;
+    
+}
+
+.newsletter input[type=submit]{
+    background-color: #F25E2A;
+    border: none;
+    border-radius: 10vw;
+    color: #fff;
+    width: 80px;
+    float: right;
+    transition: 0.3s;
+}
+
+.newsletter input[type=submit]:hover{
+    transform: scale(1.1);
+}
+
+#footer .section-padding{
+    padding: 2% 3% 2% 5% !important;
+}
+
+
+
+#footer i{
+    color: #fff;
+}
+
+#footer .copy{
+    padding: 0 0 0 5%;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 769px){
+
+    .newsletter{
+        padding: 0;
+    }
+    .newsletter input[type=email]{
+        margin-left: 0;
+        
+    }
+    .newsletter input[type=email]::placeholder{
+        font-size: 12px;
+        
+        
+    }
+
+    .newsletter input[type=submit]{
+        margin-top: 3px;
+        margin-right: 4px;
+        font-size: 12px;
+        width: 60px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+        #footer .logo2{
+            margin-top: 20px;
+        }
+ }

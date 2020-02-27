@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -298,8 +298,8 @@
     
   </div>
   
-  <div id="testimonials">
-    <div class="row col-sm-10 mx-auto">
+  <div id="testimonials" class="container-fluid">
+    <div class="row col-lg-10 col-sm-12 mx-auto">
       <div class="col-sm-4 mx-auto opinion">
         <img src="images/c.png" class="img-fluid quote" alt="quote">
         <p>"Lorem ipsum dolor sit amet,
@@ -309,8 +309,24 @@
           bibendum."
         </p>
         <div class="row">
-          <div class="col-sm-3"><img src="images/Anna.png" class="img-fluid" alt="Anna"></div>
-          <div class="col-sm-9">
+          <div class="col-sm-3 col-2"><img src="images/Anna.png" class="img-fluid" alt="Anna"></div>
+          <div class="col-sm-9 col-10">
+            <h3>Anna Mysłowska-Kiczek</h3>
+            <span>loremipsum.pl</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mx-auto opinion">
+        <img src="images/c.png" class="img-fluid quote" alt="quote">
+        <p>"Lorem ipsum dolor sit amet,
+          consectetur elit. Arcu
+          eget senectus molestie
+          donec elementym. In erat et in
+          bibendum."
+        </p>
+        <div class="row">
+          <div class="col-sm-3 col-2"><img src="images/Anna.png" class="img-fluid" alt="Anna"></div>
+          <div class="col-sm-9 col-10">
             <h3>Anna Mysłowska-Kiczek</h3>
             <span>loremipsum.pl</span>
           </div>
@@ -325,24 +341,8 @@
           bibendum."
         </p>
         <div class="row">
-          <div class="col-sm-3"><img src="images/Anna.png" class="img-fluid" alt="Anna"></div>
-          <div class="col-sm-9">
-            <h3>Anna Mysłowska-Kiczek</h3>
-            <span>loremipsum.pl</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 mx-auto opinion">
-        <img src="images/c.png" class="img-fluid quote" alt="quote">
-        <p>"Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu
-          eget dolor senectus molestie
-          donec elementym. In erat et in
-          bibendum."
-        </p>
-        <div class="row">
-          <div class="col-sm-3"><img src="images/Anna.png" class="img-fluid" alt="Anna"></div>
-          <div class="col-sm-9">
+          <div class="col-sm-3 col-2"><img src="images/Anna.png" class="img-fluid" alt="Anna"></div>
+          <div class="col-sm-9 col-10">
             <h3>Anna Mysłowska-Kiczek</h3>
             <span>loremipsum.pl</span>
           </div>
@@ -355,27 +355,27 @@
     <h1 class="text-center">Obserwuj nas na Instagramie</h1>
     <div class="container-fluid gallery">
       <div class="row no-gutters">
-        <!--Zdjęcia z instagrama - 9 zdjęć w rzędzie, dzielone po 3, czyli col-4-->
-        <div class="col-sm-2">
+        
+        <div class="col-sm-2 col-6">
           <img src="images/instagram-1.png" class="img-fluid" alt="instagram">
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6">
           <img src="images/instagram-2.png" class="img-fluid" alt="instagram">
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6">
           <img src="images/instagram-3.png" class="img-fluid" alt="instagram">
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6">
           <img src="images/instagram-1.png" class="img-fluid" alt="instagram">
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6">
           <img src="images/instagram-2.png" class="img-fluid" alt="instagram">
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6">
           <img src="images/instagram-3.png" class="img-fluid" alt="instagram">
         </div>
       </div>
-      <div class="row no-gutters">
+      <div class="row no-gutters instagram-hide">
         <div class="col-sm-2">
           <img src="images/instagram-4.png" class="img-fluid" alt="instagram">
         </div>
@@ -400,20 +400,19 @@
   
   <div id="footer">
     
-    
-    <img src="images/logo2.png" class="img-fluid" alt="eMedia">
+    <img src="images/logo2.png" class="img-fluid logo2" alt="eMedia">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 section-padding">
           <h2>O NAS</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Pellentesque mollis ornare tincidunt. Curabitur sodales risus 
             vel massa lacinia bibendum. Integer venenatis scelerisque orci.
           </p>
-          <a class="btn btn-primary" href="#" role="button">czytaj więcej..</a>
+          <div class="read-more text-right"><a class="btn btn-primary" href="#" role="button">czytaj więcej..</a></div>
         </div>
-        <div class="col-sm-2 col-6">
+        <div class="col-sm-2 col-6 wspolpraca">
           <h2>Współpraca</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -423,7 +422,7 @@
             <li>Lorem ipsum</li>
           </ul>
         </div>
-        <div class="col-sm-2 col-6">
+        <div class="col-sm-2 col-6 strategia">
           <h2>Strategia</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -433,7 +432,7 @@
             <li>Lorem ipsum</li>
           </ul>
         </div>
-        <div class="col-sm-2 col-6">
+        <div class="col-sm-2 col-6 content">
           <h2>Content</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -443,7 +442,7 @@
             <li>Lorem ipsum</li>
           </ul>
         </div>
-        <div class="col-sm-2 col-6">
+        <div class="col-sm-2 col-6 sukces">
           <h2>Sukces</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -456,7 +455,7 @@
       </div>
       <hr>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 section-padding">
           <h2>KONTAKT</h2>
           <p>
             <strong>Agencja interaktywna emedia w Lublinie</strong><br>
@@ -466,10 +465,12 @@
             Poniedziałek - Piątek | 9.00 - 17.00
           </p>
           <h2>NEWSLETTER</h2>
-          <input type="email" placeholder="Wpisz swój email">
-          <input type="submit" value="Wyślij">
+          <form class="newsletter">
+             <input type="email" class="col-sm-8 col-8" placeholder="Wpisz swój email..">
+             <input type="submit" class="col-sm-4 col-4" value="Wyślij">
+          </form>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6 wspolpraca">
           <h2>Współpraca</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -479,7 +480,7 @@
             <li>Lorem ipsum</li>
           </ul>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6 strategia">
           <h2>Strategia</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -489,7 +490,7 @@
             <li>Lorem ipsum</li>
           </ul>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6 content">
           <h2>Content</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -499,7 +500,7 @@
             <li>Lorem ipsum</li>
           </ul>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-6 sukces">
           <h2>Sukces</h2>
           <ul>
             <li>Lorem ipsum</li>
@@ -508,6 +509,23 @@
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-sm-10">
+          <p class="copy">&copy; 2019 emedia.com.pl All rights reserved</p>
+        </div>
+        <div class="col-sm-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col-sm-4">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
